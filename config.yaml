@@ -1,0 +1,35 @@
+port: 4009
+baseurl: 'http://localhost'
+secretkey: '7D6FF21AA328A48BC13AF2E285E6FE69'
+middleurl: '/media_service'
+
+# MariaDB dev
+development:
+    username: 'root'
+    password: ''
+    database: 'dunlopillo'
+    host: '127.0.0.1'
+    dialect: 'mysql'
+
+# MariaDB prod
+production:
+    username: 'dunlopillo'
+    password: 'dunlopillo#09repo'
+    database: 'dunlopillo_db'
+    host: '127.0.0.1'
+    dialect: 'mysql'
+    #logging: false
+
+# MariaDB test
+test:
+    username: 'habibi'
+    password: 'mashabibi'
+    database: 'dunlopillow_db'
+    host: '127.0.0.1'
+    dialect: 'postgres'
+
+priveleges:
+    create: 'ms.create'
+    read: 'ms.read'
+    update: 'ms.update'
+    delete: 'ms.delete'
